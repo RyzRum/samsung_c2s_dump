@@ -1,0 +1,14 @@
+# c2sxxx-user 11 RP1A.200720.012 N986BXXS3DUJ6 release-keys
+- manufacturer: samsung
+- platform: universal990
+- codename: c2s
+- flavor: c2sxxx-user
+- release: 11
+- id: RP1A.200720.012
+- incremental: N986BXXS3DUJ6
+- tags: release-keys
+- fingerprint: samsung/c2sxxx/c2s:11/RP1A.200720.012/N986BXXS3DUJ6:user/release-keys
+- is_ab: false
+- brand: samsung
+- branch: c2sxxx-user-11-RP1A.200720.012-N986BXXS3DUJ6-release-keys
+- repo: samsung_c2s_dump

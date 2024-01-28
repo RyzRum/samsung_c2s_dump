@@ -1,0 +1,6 @@
+# Script to start "k09900" on the device
+#
+base=/system
+export CLASSPATH=$base/framework/k09900.jar
+exec app_process $base/bin com.android.commands.k09900.K09900 "$@"
+

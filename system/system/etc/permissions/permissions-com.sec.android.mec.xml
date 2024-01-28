@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.mec">
+	<permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+    </privapp-permissions>
+</permissions>

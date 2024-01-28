@@ -1,0 +1,26 @@
+{
+    "external_presets": [
+        {
+            "PresetId": 1,
+            "name": "SRIB_HumanSegVideoLite_CAFFE_V100_ir_ncp_object.bin",
+            "PresetVars": [
+                933000 ,
+                -1,
+                1716000,
+                400000,
+                -1,
+                1404000,
+                -1,
+                0
+            ],
+            "PresetTypeScenario": [                
+                [
+                    0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                [
+                    1, 1, 1, 1, 1, 1, 1, 1
+                ]
+            ]
+        }
+    ]
+}

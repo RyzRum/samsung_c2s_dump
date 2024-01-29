@@ -1,0 +1,415 @@
+{
+  "Resources": [
+    {
+      "Name": "CPUMinFreq",
+      "HighFreqLimitNum": "11",
+      "LowFreqLimitNum": "5"
+    },
+    {
+      "Name": "CPUMaxFreq",
+      "HighFreqLimitNum": "11",
+      "LowFreqLimitNum": "5"
+    },
+    {
+      "Name": "CoreNumMax",
+      "ID": "0x10002002",
+      "Handler": "sysfs",
+      "BoostPath": "/sys/power/cpuhp/set_online_cpu",
+      "DefaultValue": "255",
+      "MaxValue": "255",
+      "MinValue": "0",
+      "Priority": "low"
+    },
+    {
+      "Name": "PCIE_PSM_DISABLE",
+      "Handler" : "sysfs",
+      "BoostPath" : "/sys/devices/platform/133b0000.pcie/pcie_sysfs",
+      "DefaultValue": "14",
+      "Priority" : "low",
+      "Values": [
+        "13"
+      ]
+    }
+  ],
+  "Hints": [
+    {
+      "Hint": "AMS_RESUME",
+      "ID": "1",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1687587"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_RELAUNCH_RESUME",
+      "ID": "2",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1844882"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_RESUME",
+      "ID": "3",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1687587"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_START",
+      "ID": "4",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1930195"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_RESUME_TAIL",
+      "ID": "5",
+      "Duration": "300",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1844882"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_SWITCH",
+      "ID": "7",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "2623359"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_HOME",
+      "ID": "8",
+      "Duration": "800",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "2623359"
+        }
+      ]
+    },
+    {
+      "Hint": "GALLERY_TOUCH",
+      "ID": "9",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1170380"
+        }
+      ]
+    },
+    {
+      "Hint": "GALLERY_TOUCH_TAIL",
+      "ID": "10",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1170380"
+        }
+      ]
+    },
+    {
+      "Hint": "GALLERY_SCROLL",
+      "ID": "11",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1170380"
+        }
+      ]
+    },
+    {
+      "Hint": "LAUNCHER_TOUCH",
+      "ID": "12",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource": "GPUMinFreq",
+          "Value": "377000"
+        }
+      ]
+    },
+    {
+      "Hint": "LISTVIEW_SCROLL",
+      "ID": "16",
+      "Duration": "10000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1170380"
+        }
+      ]
+    },
+    {
+      "Hint": "APP_LAUNCH",
+      "ID": "18",
+      "Duration": "700",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "2623359"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "2623359"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH_M",
+      "Duration": "2000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "2623359"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH_LM",
+      "Duration": "2000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "2623359"
+        }
+      ]
+    },
+    {
+      "Hint": "DEVICE_WAKEUP",
+      "ID": "19",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1495634"
+        }
+      ]
+    },
+    {
+      "Hint": "CONTACT_SCROLL",
+      "ID": "20",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1170380"
+        }
+      ]
+    },
+    {
+      "Hint": "BADGE_UPDATE",
+      "ID": "26",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1375664"
+        }
+      ]
+    },
+    {
+      "Hint": "SMOOTH_SCROLL",
+      "ID": "21",
+      "Duration": "10000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1258359"
+        }
+      ]
+    },
+    {
+      "Hint": "GESTURE_DETECTED",
+      "ID": "22",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1167714"
+        }
+      ]
+    },
+    {
+      "Hint": "GESTURE_DETECTED_HRR",
+      "ID": "23",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "1410322"
+        },
+        {
+          "Resource": "MIFMinFreq",
+          "Value": "1352000"
+        },
+        {
+          "Resource": "LPMDisable",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Hint": "PWM_ROTATION",
+      "ID": "15",
+      "Duration": "2000",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "2623359"
+        },
+        {
+          "Resource": "GPUMinFreq",
+          "Value": "260000"
+        },
+        {
+          "Resource": "LPMDisable",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "Hint": "PERF_TUNE_TEST_70",
+      "ID" : "1000",
+      "ResoureList": [
+        {
+          "Resource" : "CoreNumMax",
+          "Value" : "63"
+        },
+        {
+          "Resource" : "KERNEL_CPU_MAX_CORE_NOTIFY",
+          "Value" : "15"
+        },
+        {
+          "Resource": "GPUMaxFreq",
+          "Value": "377000"
+        }
+      ]
+    },
+    {
+      "Hint": "PERF_TUNE_TEST_50",
+      "ID" : "1001",
+      "ResoureList": [
+        {
+          "Resource" : "CoreNumMax",
+          "Value" : "63"
+        },
+        {
+          "Resource" : "KERNEL_CPU_MAX_CORE_NOTIFY",
+          "Value" : "15"
+        },
+        {
+          "Resource": "CPUMaxFreq",
+          "Value": "959765"
+        },
+        {
+          "Resource": "GPUMaxFreq",
+          "Value": "156000"
+        }
+      ]
+    },
+    {
+      "Hint": "PERF_TUNE_TEST_30",
+      "ID" : "1002",
+      "ResoureList": [
+        {
+          "Resource" : "CoreNumMax",
+          "Value" : "63"
+        },
+        {
+          "Resource" : "KERNEL_CPU_MAX_CORE_NOTIFY",
+          "Value" : "15"
+        },
+        {
+          "Resource": "CPUMaxFreq",
+          "Value": "751816"
+        },
+        {
+          "Resource": "GPUMaxFreq",
+          "Value": "156000"
+        }
+      ]
+    },
+    {
+      "Hint": "SMART_VIEW_NORMAL",
+      "ID" : "1200",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "162500"
+        },
+        {
+          "Resource" : "CoreNumBigMin",
+          "Value" : "3"
+        }
+      ]
+    },
+    {
+      "Hint": "SMART_VIEW_SECURE",
+      "ID" : "1201",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "217750"
+        },
+        {
+          "Resource" : "CoreNumBigMin",
+          "Value" : "3"
+        }
+      ]
+    },
+	{
+      "Hint": "DIALPAD_TAB_LAUCH",
+      "ID" : "9999",
+      "Duration": "250",
+      "ResoureList": [
+        {
+            "Resource" : "CPUMinFreq",
+            "Value" : "50%"
+        }
+      ]
+    }
+  ],
+  "Sysfs": [
+    {
+      "SysfsId": "0x00402600",
+      "SysfsName": "EMSTUNE_REQMODE",
+      "Path": "/sys/kernel/ems/emstune/req_mode"
+    },
+    {
+      "SysfsId": "0x00600900",
+      "SysfsName": "EXECUTION_MODE_CHANGE",
+      "Path": "/sys/power/execution_mode_change"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# c2sxxx-user 13 TP1A.220624.014 N986BXXS6HWE1 release-keys
+- manufacturer: samsung
+- platform: universal990
+- codename: c2s
+- flavor: c2sxxx-user
+- release: 13
+- id: TP1A.220624.014
+- incremental: N986BXXS6HWE1
+- tags: release-keys
+- fingerprint: samsung/c2sxxx/c2s:11/RP1A.200720.012/N986BXXS6HWE1:user/release-keys
+- is_ab: false
+- brand: samsung
+- branch: c2sxxx-user-13-TP1A.220624.014-N986BXXS6HWE1-release-keys
+- repo: samsung_c2s_dump

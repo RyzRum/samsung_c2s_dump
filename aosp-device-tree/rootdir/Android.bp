@@ -1,0 +1,26 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "gps.sh",
+    src: "bin/gps.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "install-recovery.sh",
+    src: "bin/install-recovery.sh",
+    vendor: true,
+}
+
+// Init configuration files
+// fstab
+prebuilt_etc {
+    name: "fstab.exynos990",
+    src: "etc/fstab.exynos990",
+    vendor: true,
+}
